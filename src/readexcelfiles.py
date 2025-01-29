@@ -10,7 +10,7 @@ import re
 
 # -----------------------------
 # عنوان صفحه
-st.title(":probing_cane:ساخت برنامه هوشمند")
+st.title(":probing_cane:ساخت برنامه درسی هوشمند")
 st.markdown('<span style="font-size: 12px;">[نحوه دریافت فایل لیست ورودی استاد](t.me/MohmmadHesamPourakbar) | [فایل تست](https://uupload.ir/view/book1_ukv6.xlsx/)</span>', unsafe_allow_html=True)
 
 # باکس آپلود فایل
@@ -158,9 +158,13 @@ if uploaded_file is not None:
             # نمایش داده‌ها
             st.header("برنامه شما ساخته شد")
             st.write(st.session_state.selected_data)
-            st.markdown("«نوشته شده توسط «محمدحسام پوراکبر")
             
-            csv_data = st.session_state.selected_data.to_csv(index=False).encode('utf-8-sig')
+on = st.toggle("سایر ابزار ها")
+if on:
+    st.markdown("«نوشته شده توسط «محمدحسام پوراکبر")
+    st.markdown("[دریافت برنامه کاربردی دیگر](https://t.me/MohmmadHesamPourakbar)" )
+    st.markdown("[ارتباط](https://www.linkedin.com/in/he3amtesla/)" )      
+            #csv_data = st.session_state.selected_data.to_csv(index=False).encode('utf-8-sig')
 
             # st.download_button(
             #     label="دانلود برنامه",
