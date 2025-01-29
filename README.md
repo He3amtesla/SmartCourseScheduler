@@ -1,0 +1,2 @@
+# SmartCourseScheduler
+SmartCourseScheduler
