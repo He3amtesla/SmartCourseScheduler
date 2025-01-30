@@ -166,14 +166,14 @@ if on:
     st.markdown("[نظرات و پیشنهاداتتون رو میتونید در اینجا بنویسید](https://t.me/MohmmadHesamPourakbar)" )
     st.markdown("[ارتباط](https://www.linkedin.com/in/he3amtesla/)" )      
     csv_data = st.session_state.selected_data.to_csv(index=False).encode('utf-8-sig')
-    st.download_button(
-        label="دانلود برنامه",
-        data=csv_data,
-        file_name="program.csv",
-        mime="text/csv"
-    )
+    #st.download_button(
+     #   label="دانلود برنامه",
+      #  data=csv_data,
+     #   file_name="program.csv",
+     #   mime="text/csv"
+  #  )
             
-sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-selected = st.feedback("thumbs")
-if selected is not None:
-    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+#sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+#selected = st.feedback("thumbs")
+#if selected is not None:
+   # st.markdown(f"You selected: {sentiment_mapping[selected]}")
