@@ -165,7 +165,7 @@ st.markdown("«نوشته شده توسط «محمدحسام پوراکبر")
 if on:
     st.markdown("[نظرات و پیشنهاداتتون رو میتونید در اینجا بنویسید](https://t.me/MohmmadHesamPourakbar)" )
     st.markdown("[ارتباط](https://www.linkedin.com/in/he3amtesla/)" )      
-    csv_data = st.session_state.selected_data.to_csv(index=False).encode('utf-8-sig')
+   # csv_data = st.session_state.selected_data.to_csv(index=False).encode('utf-8-sig')
     #st.download_button(
      #   label="دانلود برنامه",
       #  data=csv_data,
