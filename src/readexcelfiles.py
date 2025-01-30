@@ -163,7 +163,7 @@ on = st.toggle("تنظیمات پیشرفته")
 st.markdown("«نوشته شده توسط «محمدحسام پوراکبر")
 
 if on:
-    st.markdown("[نظرات و پیشنهاداتتون رو میتونید در اینجا بنویسید](https://t.me/MohmmadHesamPourakbar)" )
+    st.markdown("[نظرات و پیشنهاداتتون رو میتونید در قسمت بنویسید](https://t.me/MohmmadHesamPourakbar)" )
     st.markdown("[ارتباط](https://www.linkedin.com/in/he3amtesla/)" )      
    # csv_data = st.session_state.selected_data.to_csv(index=False).encode('utf-8-sig')
     #st.download_button(
