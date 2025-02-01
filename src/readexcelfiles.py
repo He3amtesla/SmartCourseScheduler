@@ -86,7 +86,28 @@ def check_day(text):
 if uploaded_file is not None:
     # خواندن داده‌ها از فایل اکسل
     data = pd.read_excel(uploaded_file)
-    
+
+    st.write(f"`{len(data.columns)}`:تعداد سطون های اکسل")
+    #پیشبنی نام سطون متفاوت ولی محتوا برابر
+    counter = len(data.columns)-1
+    i = 0
+    st.write (data.columns[i])
+    while i<=counter:
+        name_colum = data.columns[i]
+        name_colum = name_colum.split()
+        
+        for word in name_colum:
+            if word == "استاد":
+                data["استاد"] = data[data.columns[i]]
+                
+            elif word == "زمانبندی":
+                data["زمانبندي تشکيل کلاس"] = data[data.columns[i]]
+                
+            elif word == "نام درس":
+                data["نام درس"] = data[data.columns[i]]
+                
+        i =  i + 1
+        
     # استخراج ستون‌های مربوط به درس و استاد
     lesson_unit = data['نام درس']  # فایل درسی
     teachers_data = data["استاد"]
